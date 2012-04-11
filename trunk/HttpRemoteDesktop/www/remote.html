@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Remote Desktop v1.0</title>
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script src="js/script.js"></script>
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<script type="text/javascript">
+			var screenWidth = %screenWidth%;
+			var screenHeight = %screenHeight%;
+			
+			var dWidth = screenWidth;
+			var dHeight = screenHeight;
+			
+			var lx = 0;
+			var ly = 0;
+			var zoom = 0;
+		</script>
+	</head>
+	<body>
+		<img id="desktop" src="img/remote.png">
+		<div id="console">
+			<div id="info" class="left">
+				X:[<span class="cx"></span>] 
+				Y:[<span class="cy"></span>]<br/>
+				E:[<span class="me"></span>]<br/>
+				Z:[<span class="z"></span>]<br/>
+				S:[%screenWidth%x%screenHeight%]<br/>
+				D:[<span class="dw"></span>x<span class="dh"></span>]
+			</div>
+			<div id="controls" class="right">
+				<div id="zoomIn" class="control left">+</div>
+				<div id="up" class="control left">&uarr;</div>
+				<div id="zoomOut" class="control left">-</div>
+				<div class="clear"></div>
+				<div id="left" class="control left">&larr;</div>
+				<div id="zoomDef" class="control left">0</div>
+				<div id="right" class="control left">&rarr;</div>
+				<div class="clear"></div>
+				<div class="empty control left"></div>
+				<div id="down" class="control left">&darr;</div>
+				<div class="empty control left"></div>
+				<div class="clear"></div>								
+			</div>
+			<div class="clear"></div>
+		</div>
+	</body>	
+</html>
