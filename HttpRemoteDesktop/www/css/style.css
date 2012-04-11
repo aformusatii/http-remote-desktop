@@ -1,0 +1,68 @@
+html, body {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#console {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background-color: #cccccc;
+	border: solid 1px #999999;
+	height: auto;
+	width: 200px;
+	padding: 2px 5px 2px 5px;
+	font-size: 12px;
+	font-family: "courier";
+	font-weight: bold;
+	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;	
+		
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	border-top-left-radius: 5px;
+}
+
+.control {
+	width: 20px;
+	height: 20px;
+	background-color: blue;
+	border: solid 1px #999999;
+	color: #999999;
+	cursor: pointer;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 15px;
+}
+
+.focus {
+	background-color: #000000;
+}
+
+.empty {
+	cursor: default;
+	background-color: #999999;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+#controls {
+	margin-right: 5px;
+}
+
+.clear {
+	clear: both;
+	font-size: 0px;
+	line-height: 0px;
+}
